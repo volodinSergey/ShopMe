@@ -10,6 +10,45 @@
 </head>
 
 <body>
+    <div class="container">
+        <header class="header">
+            <div class="header__left">
+                <span class="logo">ShopMe</span>
+
+                <div class="dropdown">
+                    <button class="dropdown__button">Filter by</button>
+
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__menu-item">item</li>
+                        <li class="dropdown__menu-item">item</li>
+                        <li class="dropdown__menu-item">item</li>
+                        <li class="dropdown__menu-item">item</li>
+                    </ul>
+                </div>
+
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="write something here...">
+                    <button class="search__button"></button>
+                </div>
+
+            </div>
+
+            <div class="header__right">
+                <div class="cart-status">
+                    <button class="cart-status__button"></button>
+                    <span class="cart-status__count">0</span>
+                </div>
+
+                <div class="toggle-box">
+                    <label class="toggle" for="myToggle">
+                        <input class="toggle__input" id="myToggle" type="checkbox" />
+                        <div class="toggle__fill"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
+    </div>
+
 
     <script src="./js/app.js"></script>
 </body>

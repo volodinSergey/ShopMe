@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    padding: 40px;
+}
+
+.container {
+    height: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: .9375rem;
+    border-radius: 1.3rem;
+}

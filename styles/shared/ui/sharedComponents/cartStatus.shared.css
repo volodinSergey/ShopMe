@@ -1,0 +1,30 @@
+.cart-status {
+    position: relative;
+}
+
+.cart-status__button {
+    display: grid;
+    place-items: center;
+    width: 3.125rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.cart-status__button-cart {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cart-status__count {
+    position: absolute;
+    top: 0;
+    right: -.75rem;
+    display: grid;
+    place-items: center;
+    padding: 6px 9px;
+    border-radius: 50%;
+}
+
+.cart-status__count-counter {
+    font-size: .75rem;
+}

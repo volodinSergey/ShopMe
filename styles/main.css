@@ -1,3 +1,6 @@
-body {
-    background-color: purple;
-}
+@import './reset.css';
+@import './global.css';
+
+@import './pages/home.page.css';
+
+@import './shared/ui/sharedComponents/index.css';

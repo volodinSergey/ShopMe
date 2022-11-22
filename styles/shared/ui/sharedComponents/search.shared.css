@@ -1,0 +1,26 @@
+:root {
+    --borderRadiusSize: 10px;
+}
+
+.search {
+    display: flex;
+}
+
+.search__input {
+    padding: 8px 10px;
+    border-top-left-radius: var(--borderRadiusSize);
+    border-bottom-left-radius: var(--borderRadiusSize);
+}
+
+.search__button {
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    border-top-right-radius: var(--borderRadiusSize);
+    border-bottom-right-radius: var(--borderRadiusSize);
+}
+
+.search__button-magnifier {
+    width: 15px;
+    aspect-ratio: 1;
+}

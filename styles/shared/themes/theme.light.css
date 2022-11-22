@@ -1,0 +1,37 @@
+body {
+    background-color: #95d3ff40;
+}
+
+.container {
+    background-color: #fff;
+}
+
+.dropdown__menu {
+    background-color: #cacae2;
+}
+
+
+.search__input,
+.search__button,
+.cart-status__button {
+    background-color: #eeeeee;
+}
+
+.search__button {
+    border-left: 1px solid #a4abc7a3;
+}
+
+.cart-status__count {
+    background-color: #000;
+    color: #fff;
+}
+
+.toggle__fill {
+    box-shadow: none;
+    background-color: #171d1c;
+}
+
+.toggle__fill::before {
+    left: 20px;
+    background-color: #ec0505;
+}

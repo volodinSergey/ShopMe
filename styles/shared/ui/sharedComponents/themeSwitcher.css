@@ -1,0 +1,39 @@
+:root {
+    --width: 40px;
+    --height: calc(var(--width) / 2);
+    --border-radius: calc(var(--height) / 2);
+}
+
+.toggle {
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle__input {
+    display: none;
+}
+
+.toggle__fill {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    transition: .3s;
+}
+
+.toggle__fill::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 22px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #e1caca;
+    transition: .3s;
+}

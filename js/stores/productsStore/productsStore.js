@@ -1,27 +1,26 @@
-import { reactive } from '../../../reactiveLibrary/core.js'
-import useNotifier from './productsStore.observers.js'
+// import { reactive } from '../../../reactiveLibrary/core.js'
 
 import ProductsService from '../../services/Products.service.js'
 import CategoriesService from '../../services/Categories.service.js'
 
-const productsStore = reactive({
-    products: [],
-    categories: [],
+// const productsStore = reactive({
+//     products: [],
 
-    getAllProducts: async function () {
-        const productsResponse = await ProductsService.getAllProducts()
+//     categories: [],
 
-        this.products = productsResponse
-    },
+//     getAllProducts: async function () {
+//         const productsResponse = await ProductsService.getAllProducts()
 
-    getAllCategories: async function () {
-        const categoriesResponse = await ProductsService.getAllProducts()
+//         this.products = productsResponse
+//     },
 
-        this.categories = categoriesResponse
+//     getAllCategories: async function () {
+//         const categoriesResponse = await CategoriesService.getAll()
 
-    }
+//         this.categories = categoriesResponse
+//     }
 
-}, useNotifier)
+// })
 
 
 export default productsStore

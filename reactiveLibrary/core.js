@@ -1,5 +1,6 @@
 class Observable {
-    constructor(observers = []) {
+    constructor(whatToObserve, observers = []) {
+        this.whatToObserve = whatToObserve
         this.observers = observers
     }
 
@@ -14,26 +15,8 @@ class Observable {
     }
 }
 
-const createObservable = () => new Observable()
+const createObservable = whatToObserve => new Observable(whatToObserve)
 
-
-const notifier = value => { }
-
-const reactive = (target, notifier) => {
-    return new Proxy(target, {
-        get: (target, property) => target[property],
-
-        set: (target, property, value) => {
-            if (target[property] === value) return true
-
-            target[property] = value
-
-            notifier(value)
-
-            return true
-        }
-    })
-}
 
 const dataBind = (input, state) => {
     input.value = state
@@ -50,13 +33,43 @@ const updateField = (selector, state) => {
     element.textContent = state
 }
 
-const useTemplate = template => template
+
+class Reactive {
+    constructor(observables = []) {
+        this.observables = observables
+    }
+
+    notifier(state, newState) {
+        this.observables.forEach(observable => {
+            if (observable.whatToObserve === state) {
+                observable.notify(newState)
+            }
+        })
+    }
+
+    createReactive(target) {
+        return new Proxy(target, {
+            get: (target, state) => target[state],
+
+            set: (target, state, newState) => {
+                if (target[state] === newState) return true
+
+                target[state] = newState
+
+                this.notifier(state, newState)
+
+                return true
+            }
+        })
+    }
+}
+
 
 export {
-    reactive,
     createObservable,
     updateField,
-    useTemplate,
-    dataBind
+    dataBind,
+    Reactive
 }
+
 

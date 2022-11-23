@@ -1,7 +1,7 @@
-// import productsStore from "../../stores/productsStore/productsStore.js"
+import productsStore from "../../stores/productsStore/productsStore.js"
 
 const ProductsList = async () => {
-    // await productsStore.getAllProducts()
+    await productsStore.getAllProducts()
 }
 
 export default ProductsList

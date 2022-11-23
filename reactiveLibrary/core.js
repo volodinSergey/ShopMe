@@ -34,7 +34,7 @@ const updateField = (selector, state) => {
 }
 
 
-class Reactive {
+class ReactiveSystem {
     constructor(observables = []) {
         this.observables = observables
     }
@@ -69,7 +69,7 @@ export {
     createObservable,
     updateField,
     dataBind,
-    Reactive
+    ReactiveSystem,
 }
 
 

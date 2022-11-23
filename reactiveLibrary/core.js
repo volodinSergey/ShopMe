@@ -17,23 +17,6 @@ class Observable {
 
 const createObservable = whatToObserve => new Observable(whatToObserve)
 
-
-const dataBind = (input, state) => {
-    input.value = state
-
-    input.addEventListener('input', function () {
-        state = this.value
-    })
-}
-
-
-const updateField = (selector, state) => {
-    const element = document.querySelector(selector)
-
-    element.textContent = state
-}
-
-
 class ReactiveSystem {
     constructor(observables = []) {
         this.observables = observables
@@ -63,6 +46,22 @@ class ReactiveSystem {
         })
     }
 }
+
+const dataBind = (input, state) => {
+    input.value = state
+
+    input.addEventListener('input', function () {
+        state = this.value
+    })
+}
+
+
+const updateField = (selector, state) => {
+    const element = document.querySelector(selector)
+
+    element.textContent = state
+}
+
 
 
 export {

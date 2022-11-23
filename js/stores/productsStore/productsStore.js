@@ -15,7 +15,7 @@ const productsStore = reactiveSystem.createReactive({
     categories: [],
 
     getAllProducts: async function () {
-        const productsResponse = await ProductsService.getAllProducts()
+        const productsResponse = await ProductsService.getAll()
 
         this.products = productsResponse
     },
@@ -25,6 +25,12 @@ const productsStore = reactiveSystem.createReactive({
         const categoriesResponse = await CategoriesService.getAll()
 
         this.categories = categoriesResponse
+    },
+
+    filterByCategory: async function (categoryToFilter) {
+        const filteredProducts = await CategoriesService.getBySpecificCategory(categoryToFilter)
+
+        this.products = filteredProducts
     }
 })
 

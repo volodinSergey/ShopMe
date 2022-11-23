@@ -1,5 +1,7 @@
 import renderCategoryTemplate from "./categoryTemplate.js";
 
+
+
 const renderCategories = (renderData) => {
     const categoriesMenuList = document.querySelector('.categories__menu')
 

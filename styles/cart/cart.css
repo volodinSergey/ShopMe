@@ -1,0 +1,29 @@
+@import './cart.card.css';
+
+.cart {
+    position: absolute;
+    right: -50%;
+    padding: 40px 20px;
+    min-width: 320px;
+    background-color: #fff;
+    height: 100vh;
+
+}
+
+.cart-active {
+    right: 0;
+}
+
+.cart__top {}
+
+.cart__top-title {}
+
+.cart__middle {}
+
+.cart__list {}
+
+.cart-list {}
+
+.cart__bottom {}
+
+.cart__bottom-makeOrder-button {}

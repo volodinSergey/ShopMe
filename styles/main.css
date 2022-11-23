@@ -4,3 +4,5 @@
 @import './pages/home.page.css';
 
 @import './shared/ui/sharedComponents/index.css';
+
+@import './cart/cart.css';

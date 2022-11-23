@@ -14,17 +14,6 @@ body {
     background-color: #cacae2;
 }
 
-
-.search__input,
-.search__button,
-.cart-status__button {
-    background-color: #eeeeee;
-}
-
-.search__button {
-    border-left: 1px solid #a4abc7a3;
-}
-
 .cart-status__count {
     background-color: #000;
     color: #fff;

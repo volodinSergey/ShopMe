@@ -19,6 +19,7 @@ body {
     max-width: 90rem;
     margin: 0 auto;
     padding: .9375rem;
+    padding-top: 0;
     border-radius: 1.3rem;
     overflow-y: auto;
 }

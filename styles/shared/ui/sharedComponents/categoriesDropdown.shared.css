@@ -1,13 +1,13 @@
-.dropdown {
+.categories {
     position: relative;
 }
 
-.dropdown__button {
+.categories__button {
     position: relative;
     font-size: 1.1rem;
 }
 
-.dropdown__button::after {
+.categories__button::after {
     content: url('../../../../assets/images/icons/arrow.dropdown.svg');
     position: absolute;
     display: block;
@@ -18,10 +18,10 @@
     transition: .3s;
 }
 
-.dropdown__menu {
+.categories__menu {
     position: absolute;
     top: 1.5rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 0.5rem;
     gap: 0.6rem;

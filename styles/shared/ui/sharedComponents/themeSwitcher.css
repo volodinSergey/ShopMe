@@ -8,7 +8,6 @@
     width: var(--width);
     height: var(--height);
     border-radius: var(--border-radius);
-
     display: inline-block;
     cursor: pointer;
 }
@@ -29,7 +28,6 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
     width: 22px;
     aspect-ratio: 1;

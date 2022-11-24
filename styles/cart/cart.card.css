@@ -13,7 +13,12 @@
     border-radius: .5rem;
 }
 
-.cart-list__item-title {}
+.cart-list__item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .cart-list__item-delete {
     margin-left: 0.5rem;

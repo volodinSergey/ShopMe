@@ -37,5 +37,6 @@
 }
 
 .products-list__item-cart-button {
-    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
 }

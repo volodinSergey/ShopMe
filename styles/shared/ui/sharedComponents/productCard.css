@@ -37,16 +37,6 @@
     align-items: center;
 }
 
-.add-to-cart-image,
-.added-to-cart-image {
-    width: 25px;
-    height: 25px
-}
-
-.add-to-cart-image {
-    display: block;
-}
-
-.added-to-cart-image {
-    display: none;
+.products-list__item-cart-button {
+    font-weight: bold;
 }

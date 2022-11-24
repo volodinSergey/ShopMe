@@ -3,26 +3,58 @@
 .cart {
     position: absolute;
     right: -50%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     padding: 40px 20px;
     min-width: 320px;
     background-color: #fff;
     height: 100vh;
+}
 
+@media(max-width: 450px) {
+    .cart {
+        width: 100%;
+    }
 }
 
 .cart-active {
     right: 0;
 }
 
-.cart__top {}
+.cart__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
 
-.cart__top-title {}
 
-.cart__middle {}
+.cart__top-close-cart-button {
+    transition: .3s;
+}
 
-.cart__list {}
+@media (any-hover:hover) {
+    .cart__top-close-cart-button:hover {
+        transform: rotate(360deg);
 
-.cart-list {}
+    }
+}
+
+
+.close-cart-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+.cart__middle {
+    overflow-y: auto;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .cart__bottom {}
 

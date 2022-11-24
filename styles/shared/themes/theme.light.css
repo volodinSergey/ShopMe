@@ -11,7 +11,11 @@ body {
 }
 
 .categories__menu {
-    background-color: #cacae2;
+    background-color: steelblue;
+}
+
+.cart-status__button {
+    background-color: steelblue;
 }
 
 .cart-status__count {

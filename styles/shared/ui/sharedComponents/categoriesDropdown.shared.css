@@ -1,0 +1,75 @@
+.categories {
+    position: relative;
+}
+
+.categories__button {
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.categories__button::after {
+    content: url('../../../../assets/images/icons/arrow.dropdown.svg');
+    position: absolute;
+    display: block;
+    top: 20%;
+    right: -20px;
+    width: 13px;
+    transform: rotate(0deg);
+    aspect-ratio: 1;
+    transition: .3s;
+}
+
+.categories__menu-item {
+    cursor: pointer;
+    transition: .2s;
+    padding: 0.3rem;
+}
+
+.categories__menu-item:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.categories__menu {
+    position: absolute;
+    top: 1.5rem;
+    display: none;
+    flex-direction: column;
+    width: 9.375rem;
+    border-radius: .6rem;
+    transition: .3s;
+}
+
+.categories__menu--opened {
+    display: flex;
+}
+
+.categories__menu,
+.categories__menu--opened {
+    animation-name: toggleCategoriesMenu;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+}
+
+@keyframes toggleCategoriesMenu {
+    0% {
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.categories__button.categories__button--clicked.categories__button::after {
+    transform: rotate(-180deg);
+}
+
+.active-category {
+    background-color: rgba(0, 0, 0, .1);
+}

@@ -6,19 +6,16 @@ body {
     background-color: #fff;
 }
 
-.dropdown__menu {
-    background-color: #cacae2;
+.header {
+    background-color: #fff;
 }
 
+.categories__menu {
+    background-color: steelblue;
+}
 
-.search__input,
-.search__button,
 .cart-status__button {
-    background-color: #eeeeee;
-}
-
-.search__button {
-    border-left: 1px solid #a4abc7a3;
+    background-color: steelblue;
 }
 
 .cart-status__count {

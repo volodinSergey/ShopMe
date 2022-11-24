@@ -23,6 +23,8 @@ const cartStore = reactiveSystem.createReactive({
     },
 
     deleteFromCart: function (id) {
+        CartService.delete(id)
+
         const theRestCartItems = this.cart.filter(item => item.id !== id)
 
         this.cart = [...theRestCartItems]

@@ -24,8 +24,6 @@ const ProductsList = async () => {
             )
 
             onAddToCart(newProduct)
-
-            productItemButton.textContent = 'Added'
         }
     })
 }

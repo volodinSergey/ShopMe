@@ -13,9 +13,15 @@ const CartService = {
         localStorage.setItem('cart', JSON.stringify(cart))
     },
 
-    get: name => JSON.parse(localStorage.getItem(name)),
+    delete: id => {
+        let cart = JSON.parse(localStorage.getItem('cart'))
 
-    set: (name, value) => localStorage.setItem(name, JSON.stringify(value))
+        const cartWithoutDeletedProduct = cart.filter(item => item.id !== id)
+
+        cart = [...cartWithoutDeletedProduct]
+
+        localStorage.setItem('cart', JSON.stringify(cart))
+    }
 }
 
 export default CartService

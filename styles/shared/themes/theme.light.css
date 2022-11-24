@@ -1,3 +1,7 @@
+* {
+    transition: background-color color .3s;
+}
+
 body {
     background-color: #95d3ff40;
 }
@@ -6,12 +10,28 @@ body {
     background-color: #fff;
 }
 
+.logo {
+    color: #000;
+}
+
 .header {
     background-color: #fff;
 }
 
 .categories__menu {
     background-color: steelblue;
+}
+
+.categories__menu-item:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.active-category {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.products-list__item {
+    border: 3px solid #f5f5f5;
 }
 
 .cart-status__button {
@@ -31,4 +51,12 @@ body {
 .toggle__fill::before {
     left: 20px;
     background-color: #ec0505;
+}
+
+.cart {
+    background-color: #fff;
+}
+
+.cart-list__item {
+    border: 1px solid #d6b0b0;
 }

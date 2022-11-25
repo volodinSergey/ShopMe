@@ -1,5 +1,6 @@
 .categories {
     position: relative;
+    z-index: 2;
 }
 
 .categories__button {
@@ -30,7 +31,7 @@
     top: 1.5rem;
     display: none;
     flex-direction: column;
-    width: 9.375rem;
+    width: 10.375rem;
     border-radius: .6rem;
     transition: .3s;
 }

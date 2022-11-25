@@ -5,7 +5,7 @@
 .cart-status__button {
     display: grid;
     place-items: center;
-    width: 3.125rem;
+    width: 2.5rem;
     aspect-ratio: 1;
     border-radius: 50%;
 }
@@ -17,8 +17,8 @@
 
 .cart-status__count {
     position: absolute;
-    top: 0;
-    right: -.75rem;
+    top: -5px;
+    right: -.95rem;
     display: grid;
     place-items: center;
     padding: 6px 9px;

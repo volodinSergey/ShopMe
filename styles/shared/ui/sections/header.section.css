@@ -15,9 +15,21 @@
 }
 
 .header__left {
-    gap: 3rem;
+    gap: clamp(1rem, 2.5vw, 3rem);
+}
+
+@media(max-width: 475px) {
+
+    .header__left,
+    .header__right {
+        flex-direction: column;
+    }
+
+    .header__left {
+        align-items: flex-start;
+    }
 }
 
 .header__right {
-    gap: 6rem;
+    gap: clamp(1.4rem, 3.125vw, 3.75rem);
 }

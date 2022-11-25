@@ -1,5 +1,6 @@
 .logo {
-    font-size: 1.5rem;
+
+    font-size: clamp(1rem, 1.5625vw, 1.875rem);
     letter-spacing: .1em;
     font-weight: bold;
 }

@@ -18,7 +18,7 @@
 .cart-status__count {
     position: absolute;
     top: -5px;
-    right: -.95rem;
+    right: -.85rem;
     display: grid;
     place-items: center;
     padding: 6px 9px;

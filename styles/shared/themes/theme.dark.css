@@ -45,6 +45,16 @@ body {
     color: aliceblue;
 }
 
+@media (any-hover: hover) {
+    .products-list__item-cart-button:hover {
+        opacity: .8;
+    }
+}
+
+.products-list__item-cart-button:disabled {
+    opacity: .8;
+}
+
 .cart-status__button {
     background-color: steelblue;
 }

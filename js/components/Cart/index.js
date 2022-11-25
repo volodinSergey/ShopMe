@@ -32,6 +32,12 @@ const Cart = async () => {
             const cartItemId = cartItem.dataset.id
 
             onDeleteFromCart(cartItemId)
+
+            const productItem = document.querySelector(`.products-list__item[data-id="${cartItemId}"]`)
+            const productItemButton = productItem.querySelector('.products-list__item-cart-button')
+
+            productItemButton.textContent = 'Add to cart'
+            productItemButton.disabled = false
         }
     })
 }

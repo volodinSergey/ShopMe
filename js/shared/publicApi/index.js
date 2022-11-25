@@ -1,11 +1,13 @@
 const baseUrl = 'https://fakestoreapi.com'
+const baseProductsUrl = `${baseUrl}/products`
 
 const productsAPI = {
-    allProducts: `${baseUrl}/products`,
+    allProducts: `${baseProductsUrl}`,
 }
 
 const categoriesAPI = {
-    allCategories: `${baseUrl}/products/categories`
+    allCategories: `${baseProductsUrl}/categories`,
+    specificCategory: categoryToFilter => `${baseProductsUrl}/category/${categoryToFilter}`
 }
 
 

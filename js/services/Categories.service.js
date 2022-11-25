@@ -9,7 +9,7 @@ const CategoriesService = {
     },
 
     getBySpecificCategory: async (categoryToFilter) => {
-        const filteredProducts = await fetch(`https://fakestoreapi.com/products/category/${categoryToFilter}`)
+        const filteredProducts = await fetch(categoriesAPI.specificCategory(categoryToFilter))
         const jsonedFilteredProducts = await filteredProducts.json()
 
         return jsonedFilteredProducts

@@ -2,7 +2,6 @@ import { createObservable } from "../../../reactiveLibrary/core.js"
 
 import renderCartItems from '../../components/Cart/render.js'
 
-// Cart observers
 const renderCartItemsObserver = newState => renderCartItems(newState)
 
 const updateCartCountObserver = (newState) => {
@@ -21,8 +20,6 @@ const cartObservable = createObservable('cart')
 cartObservable.subscribe(renderCartItemsObserver, updateCartCountObserver)
 
 
-export {
-    cartObservable
-}
+export { cartObservable }
 
 

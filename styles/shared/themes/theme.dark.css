@@ -1,0 +1,92 @@
+body {
+    background-color: #1c1b21;
+}
+
+.container {
+    background-color: rgb(38 38 41);
+}
+
+.logo {
+    color: #fcfcfc;
+}
+
+.header {
+    background-color: rgb(38 38 41);
+    box-shadow: 0px 6px 6px -2px rgb(0 0 0 / 48%);
+}
+
+.categories__menu {
+    background-color: steelblue;
+}
+
+.categories__menu-item:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.categories__button {
+    color: #d8d8d8;
+}
+
+.active-category {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.products-list__item {
+    color: #eaeaea;
+    border: 1px solid #4c4c4c;
+}
+
+.products-list__item-descr {
+    color: #c3b6b6;
+}
+
+.products-list__item-cart-button {
+    background-color: #45025d;
+    color: aliceblue;
+}
+
+.cart-status__button {
+    background-color: steelblue;
+}
+
+.cart-status__count {
+    background-color: #000;
+    color: #fff;
+}
+
+.toggle__fill {
+    box-shadow: none;
+    background-color: #171d1c;
+}
+
+.toggle__fill::before {
+    left: 20px;
+    background-color: #ec0505;
+}
+
+.cart {
+    color: #fff;
+    background-color: #45025d;
+}
+
+.close-cart-icon {
+    fill: #fff;
+}
+
+.cart-list__item {
+    border: 1px solid #d6b0b0;
+}
+
+.cart-list__item-delete {
+    color: #fff;
+}
+
+.toggle__fill {
+    background-color: #7525cc;
+    box-shadow: 0 0 6px #0953e6;
+}
+
+.toggle__fill::before {
+    left: 20px;
+    background-color: #fff;
+}

@@ -24,6 +24,11 @@ const ProductsList = async () => {
             )
 
             onAddToCart(newProduct)
+
+            if (productItemButton.textContent === 'Added') return
+
+            productItemButton.textContent = 'Added'
+            productItemButton.disabled = true
         }
     })
 }

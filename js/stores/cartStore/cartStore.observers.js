@@ -16,6 +16,7 @@ const updateCartCountObserver = (newState) => {
     cartCount.textContent = newState.length
 }
 
+
 const cartObservable = createObservable('cart')
 cartObservable.subscribe(renderCartItemsObserver, updateCartCountObserver)
 

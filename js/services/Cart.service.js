@@ -1,26 +1,30 @@
+import LocalStorageService from "../shared/services/LocalStorage.service.js"
+
+const cartNameForLocalStorage = 'cart'
+
 const CartService = {
-    getAll: function () {
-        const cartItems = JSON.parse(localStorage.getItem('cart'))
+    getAll: () => {
+        const cartItems = LocalStorageService.get(cartNameForLocalStorage)
 
         return cartItems
     },
 
     add: newProduct => {
-        const cart = JSON.parse(localStorage.getItem('cart'))
+        const cart = LocalStorageService.get(cartNameForLocalStorage)
 
         cart.push(newProduct)
 
-        localStorage.setItem('cart', JSON.stringify(cart))
+        LocalStorageService.set(cartNameForLocalStorage, cart)
     },
 
     delete: id => {
-        let cart = JSON.parse(localStorage.getItem('cart'))
+        let cart = LocalStorageService.get(cartNameForLocalStorage)
 
         const cartWithoutDeletedProduct = cart.filter(item => item.id !== id)
 
         cart = [...cartWithoutDeletedProduct]
 
-        localStorage.setItem('cart', JSON.stringify(cart))
+        LocalStorageService.set(cartNameForLocalStorage, cart)
     }
 }
 

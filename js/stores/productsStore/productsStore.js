@@ -28,6 +28,12 @@ const productsStore = reactiveSystem.createReactive({
     },
 
     filterByCategory: async function (categoryToFilter) {
+        if (categoryToFilter === 'all') {
+            this.getAllProducts()
+
+            return
+        }
+
         const filteredProducts = await CategoriesService.getBySpecificCategory(categoryToFilter)
 
         this.products = filteredProducts
